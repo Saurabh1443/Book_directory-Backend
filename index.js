@@ -107,4 +107,4 @@ app.put('/updateitem',Verify_token,async(req,res)=>{
     console.log(result);
 })
  module.exports = JWT_SECRET
-app.listen(3002,(req,res)=>{console.log("listening")});
+app.listen(Proces.env.Port || 3002,(req,res)=>{console.log("listening")});
